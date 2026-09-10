@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glow & Grow | Haircare Essentials</title>
+    <meta
+      name="description"
+      content="Glow & Grow haircare range focused on shine, smoothness and healthy-looking hair."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">Glow &amp; Grow</a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-menu">
+          <a href="#home" class="active">Home</a>
+          <a href="#products">Products</a>
+          <a href="#haircare">Hair Care</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <a href="login.html" class="nav-link">Login</a>
+          <a href="register.html" class="nav-link">Register</a>
+          <button class="cart-btn" aria-label="Cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="cart-panel" id="cartPanel" aria-live="polite">
+        <div class="cart-header">
+          <h3>Your Routine</h3>
+          <button class="close-cart" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+          <div class="cart-total-row">
+            <span>Total</span>
+            <strong class="cart-total">₹0</strong>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <div class="eyebrow">Beauty care for beautiful hair</div>
+            <h1>Let Your Hair Glow. Let Your Confidence Grow.</h1>
+            <p>
+              Discover simple haircare designed for shine, smoothness and
+              healthy-looking hair.
+            </p>
+            <div class="hero-actions">
+              <a href="#products" class="btn btn-primary">Shop Now</a>
+              <a href="#haircare" class="btn btn-secondary">Explore Hair Care</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>3-Step</strong>
+                <span>Routine</span>
+              </div>
+              <div>
+                <strong>Daily</strong>
+                <span>Care</span>
+              </div>
+              <div>
+                <strong>Glow</strong>
+                <span>Focus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="image-card">
+              <img src="images/hero.jpeg" alt="Glow & Grow haircare products displayed on a beauty styled background" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-intro">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-tag">Our Promise</span>
+            <h2>Meet Glow &amp; Grow</h2>
+          </div>
+          <p class="intro-copy reveal">
+            Glow &amp; Grow brings everyday beauty care into your haircare routine with
+            products designed to help your hair look shiny, smooth and healthy.
+          </p>
+
+          <div class="feature-grid reveal">
+            <article class="feature-card">
+              <div class="icon-wrap"><i class="fa-solid fa-sparkles"></i></div>
+              <h3>Shine</h3>
+              <p>For naturally shiny-looking hair.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-wrap"><i class="fa-solid fa-wand-sparkles"></i></div>
+              <h3>Smoothness</h3>
+              <p>For soft and smooth-feeling hair.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-wrap"><i class="fa-solid fa-droplet"></i></div>
+              <h3>Nourishment</h3>
+              <p>For everyday hair care.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-tag">Our Range</span>
+            <h2>Glow &amp; Grow Essentials</h2>
+          </div>
+
+          <div class="product-grid reveal">
+            <article class="product-card" data-product-id="shampoo">
+              <div class="product-image-wrap">
+                <img src="images/shampoo.jpeg" alt="Glow & Grow Shine Boost Shampoo bottle" />
+              </div>
+              <div class="product-body">
+                <h3>Glow &amp; Grow Shine Boost Shampoo</h3>
+                <p>
+                  A gentle everyday shampoo designed to leave hair feeling fresh,
+                  clean and shiny-looking.
+                </p>
+                <div class="product-meta">
+                  <span class="price">₹299</span>
+                  <button class="btn btn-primary add-to-cart" data-product-id="shampoo">Shop Now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="conditioner">
+              <div class="product-image-wrap">
+                <img src="images/conditioner.jpeg" alt="Glow & Grow Smooth Care Conditioner bottle" />
+              </div>
+              <div class="product-body">
+                <h3>Glow &amp; Grow Smooth Care Conditioner</h3>
+                <p>
+                  A nourishing conditioner designed for softer and smoother-looking hair.
+                </p>
+                <div class="product-meta">
+                  <span class="price">₹299</span>
+                  <button class="btn btn-primary add-to-cart" data-product-id="conditioner">Shop Now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="serum">
+              <div class="product-image-wrap">
+                <img src="images/serum.jpeg" alt="Glow & Grow Shine & Smooth Serum bottle" />
+              </div>
+              <div class="product-body">
+                <h3>Glow &amp; Grow Shine &amp; Smooth Serum</h3>
+                <p>
+                  A lightweight hair serum for a smooth, polished and shiny-looking finish.
+                </p>
+                <div class="product-meta">
+                  <span class="price">₹399</span>
+                  <button class="btn btn-primary add-to-cart" data-product-id="serum">Shop Now</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="haircare-split" id="haircare">
+        <div class="container split-grid">
+          <div class="split-image reveal">
+            <img src="images/hair-model.jpeg" alt="Woman with healthy-looking glossy hair in a beauty campaign style image" />
+          </div>
+          <div class="split-content reveal">
+            <span class="section-tag">Simple routine</span>
+            <h2>Healthy-Looking Hair Starts With Simple Care.</h2>
+            <p>
+              Great haircare doesn't have to be complicated. Build a simple routine around
+              cleansing, conditioning and finishing.
+            </p>
+
+            <div class="step-list">
+              <div class="step-item">
+                <span class="step-number">01</span>
+                <div>
+                  <h3>Cleanse</h3>
+                  <p>Start fresh with Glow &amp; Grow Shampoo.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-number">02</span>
+                <div>
+                  <h3>Condition</h3>
+                  <p>Keep your hair feeling soft and smooth.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-number">03</span>
+                <div>
+                  <h3>Finish</h3>
+                  <p>Add a touch of Glow &amp; Grow Serum for a polished finish.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary routine-trigger">Build My Routine</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="routine-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-tag">3-step ritual</span>
+            <h2>Your 3-Step Glow &amp; Grow Routine</h2>
+          </div>
+
+          <div class="routine-grid reveal">
+            <article class="routine-card">
+              <span class="routine-step">STEP 1</span>
+              <h3>Cleanse</h3>
+              <p>Wash away everyday buildup with shampoo.</p>
+            </article>
+            <article class="routine-card accent-card">
+              <img src="images/routine.jpeg" alt="Woman styling hair with shampoo and conditioner in a beauty routine" />
+            </article>
+            <article class="routine-card">
+              <span class="routine-step">STEP 2</span>
+              <h3>Condition</h3>
+              <p>Apply conditioner to help maintain softness and smoothness.</p>
+            </article>
+            <article class="routine-card">
+              <span class="routine-step">STEP 3</span>
+              <h3>Glow</h3>
+              <p>Finish with a small amount of serum for shine and a polished look.</p>
+            </article>
+          </div>
+
+          <div class="routine-button-wrap reveal">
+            <button class="btn btn-primary routine-ready">Start My Routine</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section">
+        <div class="container quiz-box reveal">
+          <div class="section-heading center reveal">
+            <span class="section-tag">Hair quiz</span>
+            <h2>Find Your Glow &amp; Grow Match</h2>
+          </div>
+
+          <div class="quiz-grid">
+            <div class="quiz-card">
+              <h3>Question 1</h3>
+              <p>What is your main hair concern?</p>
+              <div class="option-list">
+                <label><input type="radio" name="hairConcern" value="Dryness" /> Dryness</label>
+                <label><input type="radio" name="hairConcern" value="Frizz" /> Frizz</label>
+                <label><input type="radio" name="hairConcern" value="Dullness" /> Dullness</label>
+                <label><input type="radio" name="hairConcern" value="Roughness" /> Roughness</label>
+              </div>
+            </div>
+
+            <div class="quiz-card">
+              <h3>Question 2</h3>
+              <p>What do you want most from your haircare?</p>
+              <div class="option-list">
+                <label><input type="radio" name="hairGoal" value="Shine" /> Shine</label>
+                <label><input type="radio" name="hairGoal" value="Smoothness" /> Smoothness</label>
+                <label><input type="radio" name="hairGoal" value="Softness" /> Softness</label>
+                <label><input type="radio" name="hairGoal" value="Everyday nourishment" /> Everyday nourishment</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-action reveal">
+            <button class="btn btn-primary" id="quizButton">Find My Match</button>
+          </div>
+
+          <div class="quiz-result" id="quizResult" aria-live="polite">
+            <div class="result-card hidden">
+              <p class="result-label">Your match</p>
+              <h3 id="resultText">Your Glow &amp; Grow Match: Shine Boost Shampoo</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-tag">Why us</span>
+            <h2>Why Glow &amp; Grow?</h2>
+          </div>
+
+          <div class="feature-grid reveal">
+            <article class="feature-card">
+              <div class="icon-wrap"><i class="fa-solid fa-star"></i></div>
+              <h3>Shine</h3>
+              <p>Helps hair look naturally shiny.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-wrap"><i class="fa-solid fa-hand-sparkles"></i></div>
+              <h3>Smoothness</h3>
+              <p>Helps hair feel soft and smooth.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-wrap"><i class="fa-solid fa-list-check"></i></div>
+              <h3>Simple Routine</h3>
+              <p>Easy-to-follow everyday haircare.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-wrap"><i class="fa-solid fa-heart"></i></div>
+              <h3>Beauty &amp; Confidence</h3>
+              <p>Haircare designed to complement your beauty routine.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-tag">Community</span>
+            <h2>Loved by Our Glow Community</h2>
+          </div>
+
+          <div class="testimonial-grid reveal">
+            <article class="testimonial-card">
+              <h3>Ananya</h3>
+              <div class="stars">★★★★★</div>
+              <p>“My hair feels so much smoother after adding the routine to my day.”</p>
+            </article>
+            <article class="testimonial-card">
+              <h3>Riya</h3>
+              <div class="stars">★★★★★</div>
+              <p>“I love how simple the Glow &amp; Grow routine is.”</p>
+            </article>
+            <article class="testimonial-card">
+              <h3>Meera</h3>
+              <div class="stars">★★★★★</div>
+              <p>“The serum gives my hair a beautiful shiny-looking finish.”</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <div class="about-content reveal">
+            <span class="section-tag">About us</span>
+            <h2>Beauty That Grows With You.</h2>
+            <p>
+              Glow &amp; Grow extends the beauty-care experience into everyday haircare,
+              bringing together simple routines and products focused on shine,
+              smoothness and healthy-looking hair.
+            </p>
+            <div class="philosophy-box">
+              <h3>Our Philosophy</h3>
+              <p>Simple care. Beautiful shine. Everyday confidence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-intro reveal">
+            <span class="section-tag">Connect</span>
+            <h2>Let's Stay Connected</h2>
+            <p>We'd love to hear from you about your haircare routine and care goals.</p>
+          </div>
+
+          <div class="contact-card reveal">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" name="name" placeholder="Your name" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="email" placeholder="Your email" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us about your haircare goals"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="form-message" id="contactMessageStatus"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Glow &amp; Grow</h3>
+          <p>Shine. Smooth. Grow.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#haircare">Hair Care</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Glow &amp; Grow. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Glow & Grow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="auth-page">
+    <header class="auth-header">
+      <nav class="navbar container auth-nav">
+        <a href="index.html" class="logo">Glow &amp; Grow</a>
+      </nav>
+    </header>
+
+    <main class="auth-main">
+      <div class="auth-card reveal">
+        <div class="auth-badge"><i class="fa-solid fa-seedling"></i></div>
+        <h1>Welcome Back to Glow &amp; Grow</h1>
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" placeholder="Enter your email" />
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" name="password" placeholder="Enter your password" />
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">Login</button>
+          <p class="form-message" id="loginMessage"></p>
+        </form>
+
+        <p class="auth-switch">
+          Don’t have an account?
+          <a href="register.html">Register</a>
+        </p>
+      </div>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
